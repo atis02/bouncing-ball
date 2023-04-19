@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #4c92ce;
+    overflow: hidden;
+
+}
+@keyframes sky-rotate {
+    0%{
+        transform: rotate(0);
+        width: 1348px;
+
+    }
+    10%{
+        width: 1300px;
+
+    }
+    20%{
+        width: 1248px;
+
+    }
+    30%{
+        width: 1200px
+
+    }
+    40%{
+        width: 1150px
+    }
+  
+    60%{
+        width: 1150px;
+    }
+    70%{
+        width: 1189px;
+    }
+    80%{
+        width: 1248px;
+
+    }
+    90%{
+        width: 1300px;
+
+    }
+    100%{
+        width: 1380px;
+        transform: rotate(180deg);
+    }
+    
+}
+.rotate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sky{
+    width: 100%;
+    height: 80vh;
+        /* background-image: linear-gradient(220deg,blue,orange); */
+    position: relative;
+    animation: sky-rotate 5s linear infinite;
+
+}
+@keyframes sky-bgc {
+    0%{
+        transform: rotate(0);
+        width: 1348px;
+
+    }
+    10%{
+        width: 1300px;
+
+    }
+    20%{
+        width: 1248px;
+
+    }
+    30%{
+        width: 1200px
+
+    }
+    40%{
+        width: 1150px
+    }
+  
+    60%{
+        width: 1150px;
+    }
+    70%{
+        width: 1189px;
+    }
+    80%{
+        width: 1248px;
+
+    }
+    90%{
+        width: 1300px;
+
+    }
+    100%{
+        width: 1380px;
+        transform: rotate(180deg);
+    }
+}
+.rotate-div{
+    height: 50px;
+    width: 1348px;
+    position: relative;
+    background-color: #4c92ce;
+    animation: sky-bgc 5s linear infinite;
+
+
+}
+.sun{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(245, 234, 27);
+    box-shadow: 0 0 10px 10px rgb(245, 234, 27) ;
+    border: 0.01px solid rgb(230, 237, 39);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.earth{
+    background-color: #0eba13;
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+}
